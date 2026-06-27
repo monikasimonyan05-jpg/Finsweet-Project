@@ -1,0 +1,119 @@
+.list__authors {
+    text-align: center;
+    text-transform: none;
+}
+
+.article__list {
+    width: 100%;
+    max-width: 296px;
+    padding: 40px 28px;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color8);
+}
+
+.author__info {
+    align-items: center;
+    flex-direction: column;
+}
+
+.article__list:hover {
+    border: 1px solid #000;
+    background-color: var(--color6);
+}
+
+.name__author {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--color1);
+    letter-spacing: -1px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: var(--font-family2);
+}
+
+.author__proffesion {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--color5);
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--font-family1);
+}
+
+.social__link {
+    padding-right: 16px;
+}
+
+.social__ficon {
+    color: var(--color5);
+}
+
+.social__icons {
+    width: 16px;
+    height: 16px;
+    color: var(--color1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 1380px) {
+    .list__authors__block {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .list__authors__block {
+        padding: 0 3%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .article__list {
+        max-width: 90%;
+        padding: 25px;
+    }
+
+    .name__author {
+        font-size: 24px;
+        line-height: 32px;
+    }
+ 
+    .author__proffesion {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 8px;
+    }
+
+    .social__icons {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .list__authors__block {
+        padding: 0 6%;
+    }
+
+    .article__list {
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .name__author {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .social__icons {
+        width: 12px;
+        height: 12px;
+    }
+}

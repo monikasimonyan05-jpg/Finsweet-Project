@@ -1,0 +1,262 @@
+.contact__us__block {
+    margin-bottom: 64px;
+}
+
+.contact__heading {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--color1);
+    text-transform: uppercase;
+    font-family: var(--font-family1);
+}
+
+.contact__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    color: var(--color1);
+    padding: 12px 0 24px;
+    letter-spacing: -2px;
+    font-family: var(--font-family2);
+}
+
+.contact__description {
+    margin: auto;
+    width: 100%;
+    max-width: 768px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: var(--color5);
+    font-family: var(--font-family1);
+}
+
+.info__section {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    padding: 48px 64px;
+    margin-bottom: 32px;
+    background-color: var(--color4);
+}
+
+.info__box__text,
+.info__box__heading {
+    color: #ffffff8a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 15px;
+    font-family: var(--font-family1);
+}
+
+.info__box__highlight {
+    width: 100%;
+    color: #fff;
+    max-width: 221px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    line-height: 32px;
+    font-family: var(--font-family2);
+}
+
+.info__box__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.contact__box,
+.working__hours__heading {
+    width: 294px;
+    border-bottom: 1px solid #ffffff8a;
+}
+
+.contact__details {
+    margin-left: 42px;
+}
+
+.contact__form__block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form {
+    width: 768px;
+    height: 76px;
+    padding: 20px 24px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    border: 1px solid #6d6e7687;
+}
+
+.form__textarea {
+    resize: none;
+    height: auto;
+}
+
+.contact__form::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color1);
+    text-transform: capitalize;
+    font-family: var(--font-family1);
+}
+
+.form__select {
+    font-size: 16px;
+    appearance: none;
+    background-position-x: 90%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/Vector1.png);
+}
+
+.form__button {
+    width: 100%;
+    max-width: 768px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 16px 0;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--color1);
+    background-color: var(--color2);
+    font-family: var(--font-family2);
+}
+
+
+@media (max-width: 768px) {
+    .main__block {
+        margin: 75px 0;
+        padding: 0 5%;
+    }
+
+    .contact__title {
+        font-size: 36px;
+        line-height: 48px;
+        padding: 8px 0 16px;
+    }
+
+    .contact__description {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 16px;
+    }
+
+    .info__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__section {
+        padding: 32px !important;
+    }
+
+    .info__box__heading {
+        margin: auto;
+        text-align: center;
+    }
+
+    .info__box__highlight {
+        max-width: 100%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .info__box__text {
+        font-size: 13px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .contact__details {
+        margin-left: 0;
+    }
+
+    .contact__box,
+    .working__hours__heading {
+        width: 200px;
+    }
+
+    .contact__form__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__form {
+        width: 100%;
+        height: 66px;
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .form__button {
+        font-size: 20px;
+        padding: 12px 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .contact__heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contact__title {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 8px 15px 16px;
+    }
+
+    .contact__description {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .info__section {
+        padding: 24px;
+    }
+
+    .info__box__highlight {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .info__box__text,
+    .info__box__heading {
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contact__form {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .form__button {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .form__select {
+        font-size: 14px;
+    }
+
+    .contact__form::placeholder {
+        font-size: 14px;
+    }
+}

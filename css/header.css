@@ -1,0 +1,161 @@
+header {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+}
+
+.header__block {
+    align-items: center;
+    background-color: var(--color1);
+}
+
+.website__logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style-type: none;
+}
+
+.nav__list {
+    margin: 0 24px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav__links a {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: var(--font-family1);
+}
+
+.nav__links a::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: '';
+    position: absolute;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    /* transition: transform 0.3s ease;  */
+}
+
+
+.sbc__button {
+    border: none;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 16px 48px;
+    display: inline-block;
+    background-color: #fff;
+    transition: all 0.2 ease;
+    color: var(--color1) !important;
+    font-family: var(--font-family2) !important;
+}
+
+.sbc__button:hover {
+    scale: 1.05;
+}
+
+.sbc__button:active {
+    scale: 0.95;
+}
+
+label #btn,
+label #cancel {
+    color: #fff;
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 80px;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1380px) {
+
+    .header__block,
+    .banner__block {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 915px) {
+    header .nav__list {
+        margin: 0 15px;
+        font-size: 15px;
+    }
+
+    header .sbc__button {
+        margin-left: 10px;
+        padding: 16px 35px;
+    }
+}
+
+@media (max-width: 780px) {
+    header .nav__list {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    header.sbc__button {
+        padding: 16px 22px;
+    }
+}
+
+@media (max-width: 720px) {
+    label #btn {
+        display: block !important;
+    }
+
+    header .nav__links {
+        left: -100%;
+        top: 80px;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        text-align: center;
+        transition: all .5s;
+        background: #232536cf;
+        backdrop-filter: blur(15px);
+    }
+
+    header .nav__list {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    header .nav__list a {
+        font-size: 18px;
+    }
+
+    header .sbc__button {
+        padding: 16px 60px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none !important;
+    }
+
+    #check:checked~label #cancel {
+        display: block !important;
+    }
+}
+    
